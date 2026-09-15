@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--
+  ============================================================
+  LESSON 1: THE TITLE TAG
+  This is the blue clickable link Google shows in search results.
+  It's the single most important on-page SEO element on the page.
+  Rule of thumb: put the most important words first, keep it under
+  ~60 characters, and make every page's title different.
+  Learn more: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+  ============================================================
+-->
+<title>Casa de Bebinca — Traditional Goan Desserts, Made Slow</title>
+
+<!--
+  ============================================================
+  LESSON 2: THE META DESCRIPTION
+  This is the grey summary text under the title in search results.
+  It does NOT directly affect ranking — but it affects whether
+  someone actually clicks your result over the one above or below
+  it. Write it like a tiny advert aimed at a real person, not a
+  keyword list.
+  ============================================================
+-->
+<meta name="description" content="Casa de Bebinca makes traditional layered bebinca and sweet potato cake by hand, the slow way — a Goan-Daman family recipe, one order at a time. DM us on Instagram to order.">
+
+<!-- Canonical tag: tells Google this is the "real" version of this exact page,
+     which matters once a site has similar URLs (with/without www, ?params, etc.) -->
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/casa-de-bebinca/index.html">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍮</text></svg>">
+<link rel="stylesheet" href="style.css">
+
+<!--
+  ============================================================
+  LESSON 3: SCHEMA MARKUP (structured data)
+  This is a block of code Google reads but humans never see. It
+  tells Google exactly what kind of business this is, in a format
+  it can slot straight into rich search results (like the little
+  info box you see for local businesses). This is the technical
+  version of the "Google Business Profile" concept from the ROC
+  Homes work — same principle, applied in code.
+  Learn more: https://developers.google.com/search/docs/appearance/structured-data/local-business
+  ============================================================
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Casa de Bebinca",
+  "description": "Traditional Goan-Daman layered bebinca and sweet potato cake, made by hand.",
+  "url": "https://YOUR-USERNAME.github.io/casa-de-bebinca/",
+  "sameAs": ["https://instagram.com/YOUR-INSTAGRAM-HANDLE"],
+  "servesCuisine": "Goan"
+}
+</script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="brand">Casa de Bebinca</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">Our Story</a>
+    <a href="blog-bebinca-tradition.html">Why It Takes All Day</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <!--
+    LESSON 4: THE H1 TAG
+    Every page needs exactly one H1 — think of it as the page's real
+    headline, separate from the browser-tab title above. Google uses
+    it as a strong signal for what the page is actually about.
+  -->
+  <!--
+    Note from Claude: this is a placeholder mark, not your actual logo file.
+    Your real logo (a diamond pattern in navy #334069 and copper #B67B45)
+    was made in an earlier session and its image file isn't accessible to
+    me here — only these notes describing it. Upload the original SVG/PNG
+    and I'll drop it in exactly, or keep this if it's close enough.
+  -->
+  <svg class="diamond-mark" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <polygon points="15,2 28,15 15,28 2,15" fill="#334069"/>
+    <polygon points="45,2 58,15 45,28 32,15" fill="#B67B45"/>
+    <polygon points="75,2 88,15 75,28 62,15" fill="#334069"/>
+    <polygon points="105,2 118,15 105,28 92,15" fill="#B67B45"/>
+  </svg>
+  <h1>Casa de Bebinca</h1>
+  <p class="tagline">The only bebinca that takes all day.</p>
+  <a href="https://instagram.com/YOUR-INSTAGRAM-HANDLE" class="cta">Order on Instagram →</a>
+</header>
+
+<main>
+  <section class="intro">
+    <p>Layered bebinca and sweet potato cake, made the way a Goan-Daman
+    kitchen has always made them — by hand, one layer at a time, from a
+    recipe that isn't written down anywhere except memory.</p>
+  </section>
+
+  <!--
+    LESSON 5: "SUITABLE PAGES" / CONTENT STRUCTURE
+    Notice this site has three separate pages, not one giant page:
+    - Home (this page): who we are, what we sell, how to order
+    - About: the trust-building story
+    - Blog post: answers a real question someone searches, before
+      they've even heard of Casa de Bebinca
+    Each page targets a different kind of search intent. That's the
+    same "funnel stage" thinking from the ROC Homes strategy —
+    transactional vs. informational — applied here.
+  -->
+  <section class="products">
+    <div class="product-card">
+      <h2>Layered Bebinca</h2>
+      <p>Sixteen thin layers, baked one at a time under a slow flame.
+      Nothing about it is fast, and that's the point.</p>
+    </div>
+    <div class="product-card">
+      <h2>Sweet Potato Cake</h2>
+      <p>Dense, unlayered, and quietly the more addictive of the two.
+      No two batches taste quite the same.</p>
+    </div>
+  </section>
+
+  <section class="learn-more">
+    <h2>Curious why it takes so long?</h2>
+    <p><a href="blog-bebinca-tradition.html">Read the story behind the slow layer-by-layer method →</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>Casa de Bebinca — a small, home-based dessert kitchen. Orders by Instagram DM only.</p>
+</footer>
+
+</body>
+</html>

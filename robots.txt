@@ -1,0 +1,15 @@
+# LESSON: robots.txt is the first file a search engine crawler checks
+# on any site. It's a set of instructions, not a lock — it tells
+# well-behaved crawlers (like Googlebot) what they're allowed to visit.
+#
+# "User-agent: *" means "this rule applies to every crawler"
+# "Allow: /" means "you may crawl everything on this site"
+#
+# The Sitemap line below points crawlers straight to the full list of
+# pages, so they don't have to discover them one link at a time.
+# Replace YOUR-USERNAME once your GitHub Pages site is live.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://YOUR-USERNAME.github.io/casa-de-bebinca/sitemap.xml

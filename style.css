@@ -1,0 +1,108 @@
+/* BIBI brand colors — pulled from the actual logo work already done:
+   navy #334069, copper #B67B45 */
+
+:root {
+  --navy: #334069;
+  --copper: #B67B45;
+  --cream: #FAF6EF;
+  --text: #2B2B28;
+  --muted: #6B6B63;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.65;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 1.5rem;
+  background: var(--navy);
+}
+.site-nav .brand {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+.nav-links a {
+  color: #E7DFD0;
+  text-decoration: none;
+  margin-left: 1.4rem;
+  font-size: 0.95rem;
+}
+.nav-links a:hover { color: var(--copper); }
+
+.hero {
+  text-align: center;
+  padding: 4.5rem 1.5rem 3rem;
+}
+.hero--small { padding: 3rem 1.5rem 1.5rem; }
+.diamond-mark { width: 110px; height: auto; margin-bottom: 0.6rem; }
+.hero h1 {
+  font-size: 3rem;
+  margin: 0 0 0.4rem;
+  color: var(--navy);
+  letter-spacing: 0.03em;
+}
+.hero .tagline {
+  font-size: 1.15rem;
+  color: var(--muted);
+  font-style: italic;
+  margin: 0 0 1.6rem;
+}
+.cta {
+  display: inline-block;
+  background: var(--copper);
+  color: #fff;
+  padding: 0.7rem 1.6rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: Georgia, serif;
+}
+
+main { max-width: 680px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+.prose p { font-size: 1.05rem; }
+.prose h2 { color: var(--navy); margin-top: 2rem; }
+
+.intro { max-width: 680px; margin: 0 auto; padding: 0 1.5rem; text-align: center; }
+.intro p { font-size: 1.1rem; color: var(--muted); }
+
+.products {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 780px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-card {
+  background: #fff;
+  border: 1px solid #E4DACB;
+  border-radius: 8px;
+  padding: 1.6rem;
+  flex: 1 1 260px;
+}
+.product-card h2 { color: var(--navy); margin-top: 0; }
+
+.learn-more {
+  text-align: center;
+  padding: 2rem 1.5rem 0;
+}
+.learn-more a { color: var(--copper); font-weight: bold; text-decoration: none; }
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding: 2rem 1.5rem;
+}

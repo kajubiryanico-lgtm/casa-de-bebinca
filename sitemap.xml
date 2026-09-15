@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  LESSON: a sitemap is just a list of every page on your site, in a
+  format search engines can read. It doesn't force Google to index
+  anything, but it makes sure nothing gets missed or discovered late —
+  especially useful for a brand-new site with almost no other pages
+  linking to it yet (which is exactly Casa de Bebinca's situation right now).
+
+  Replace YOUR-USERNAME on every line below once the site is live,
+  then submit this exact file's URL in Google Search Console.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://YOUR-USERNAME.github.io/casa-de-bebinca/index.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://YOUR-USERNAME.github.io/casa-de-bebinca/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://YOUR-USERNAME.github.io/casa-de-bebinca/blog-bebinca-tradition.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
